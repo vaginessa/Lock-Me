@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<ListPreference
+	    android:title="HTTP/HTTPS"
+	    android:key="target_service"
+	    android:summary="Choose type of service"
+	    android:entries="@array/list"
+	    android:entryValues="@array/lvalues">
+	</ListPreference>
+	<EditTextPreference
+	    android:title="IP Address"
+	    android:key="target_ip"
+	    android:summary="Enter listening IP Address">
+	</EditTextPreference>
+	<EditTextPreference
+	    android:title="Port Number"
+	    android:key="target_port"
+	    android:summary="Enter listening port number">
+	</EditTextPreference>
+	<EditTextPreference
+	    android:title="Secret Key"
+	    android:key="target_secret"
+	    android:summary="Enter secret key">
+	</EditTextPreference>
+	<CheckBoxPreference 
+	    android:title="Lock when app opens"
+	    android:defaultValue="false"
+	    android:key="target_startup"
+	    />
+    
+</PreferenceScreen>
